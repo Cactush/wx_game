@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="91201b6c-17f2-44c7-969e-4b7c2c5d21bd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1aFwJcAhTacJZUjK8xbM6mmV4ZX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build github.com/Cactush/go-gin" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-gin" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/Cactush/go-gin" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/Cactush/go-gin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>https://goproxy.cn,direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="541" y="234" width="579" height="402" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586348821944">
+      <screen x="0" y="25" width="1672" height="824" />
+    </state>
+    <state x="541" y="234" width="579" height="402" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1672.824@0.25.1672.824" timestamp="1586348821944" />
+    <state x="440" y="27" width="658" height="665" key="#go_build_github.com/Cactush/go-gin" timestamp="1586420279008">
+      <screen x="0" y="27" width="1672" height="669" />
+    </state>
+    <state x="440" y="27" width="658" height="665" key="#go_build_github.com/Cactush/go-gin/0.27.1672.669@0.27.1672.669" timestamp="1586420279008" />
+    <state x="622" y="148" width="424" height="480" key="FileChooserDialogImpl" timestamp="1586705313541">
+      <screen x="0" y="27" width="1714" height="857" />
+    </state>
+    <state x="622" y="148" width="424" height="480" key="FileChooserDialogImpl/0.27.1714.857@0.27.1714.857" timestamp="1586705313541" />
+    <state x="296" y="56" key="SettingsEditor" timestamp="1586346573226">
+      <screen x="0" y="25" width="1672" height="853" />
+    </state>
+    <state x="296" y="56" key="SettingsEditor/0.25.1672.853@0.25.1672.853" timestamp="1586346573226" />
+    <state x="519" y="120" width="620" height="614" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586768193575">
+      <screen x="0" y="27" width="1668" height="804" />
+    </state>
+    <state x="519" y="120" width="620" height="614" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1668.804@0.27.1668.804" timestamp="1586768193575" />
+    <state x="498" y="73" width="672" height="758" key="search.everywhere.popup" timestamp="1586768308195">
+      <screen x="0" y="27" width="1668" height="804" />
+    </state>
+    <state x="498" y="73" width="672" height="758" key="search.everywhere.popup/0.27.1668.804@0.27.1668.804" timestamp="1586768308195" />
+    <state x="499" y="68" width="672" height="678" key="search.everywhere.popup/0.27.1672.720@0.27.1672.720" timestamp="1586484543384" />
+  </component>
+</project>
