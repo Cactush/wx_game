@@ -10,8 +10,8 @@ import (
 
 type Circleuser struct {
 	UserId           int    `json:"user_id"`
-	OpenId           string `json:"open_id"`
-	Avatar           string `json:"avatar"`
+	OpenId           string `json:"-"`
+	Avatar           string `json:"-"`
 	NickName         string `json:"nick_name"`
 	WechatAvatar     string `json:"wechat_avatar"`
 	Age              string `json:"-"`
@@ -22,6 +22,7 @@ type Circleuser struct {
 	House            string `json:"-"`
 	MonthlySalary    string `json:"-"`
 	Car              string `json:"-"`
+	Card             int    `json:"-"`
 }
 type Usertoken struct {
 	Key    string `json:"key"`
@@ -58,7 +59,7 @@ func (c *Circleuser) GetEducation() string {
 	}
 	return education
 }
-func (c*Circleuser)GetAddress()string  {
+func (c *Circleuser) GetAddress() string {
 	return c.PlaceOfResidence
 
 }
@@ -79,28 +80,44 @@ func (c *Circleuser) GetHouse() (house_keywork string) {
 	return
 }
 
-func (c *Circleuser) GetMonthlySalary()(monthly_salary string) {
+func (c *Circleuser) GetMonthlySalary() (monthly_salary string) {
 	if c.MonthlySalary != "" && strings.ContainsAny(c.MonthlySalary, "5千") {
 		monthly_salary = "月薪过万"
 	}
 	return
 }
 
-func (c *Circleuser) GetCar()(car string) {
-	if c.Car!=""&& strings.ContainsAny(c.Car,"有车"){
+func (c *Circleuser) GetCar() (car string) {
+	if c.Car != "" && strings.ContainsAny(c.Car, "有车") {
 		car = c.Car
 	}
 	return
 }
 
-func (c *Circleuser)KeyWord() []string  {
-	keyWordList := []string{c.GetAge(),c.GetEducation(),c.GetAddress(),
-		c.GetHeight(),c.GetHouse(),c.GetMonthlySalary(),c.GetCar()}
+func (c *Circleuser) KeyWord() []string {
+	keyWordList := []string{c.GetAge(), c.GetEducation(), c.GetAddress(),
+		c.GetHeight(), c.GetHouse(), c.GetMonthlySalary(), c.GetCar()}
 	temp_keyworklist := []string{}
-	for _,value := range keyWordList{
-		if value!=""{
-			temp_keyworklist = append(temp_keyworklist,value)
+	for _, value := range keyWordList {
+		if value != "" {
+			temp_keyworklist = append(temp_keyworklist, value)
 		}
 	}
 	return temp_keyworklist[:6]
+}
+
+func (c *Circleuser) IsCard() bool {
+	if c.Card == 1 {
+		return true
+	}
+	return false
+}
+
+func (c *Circleuser) IsSetQuestion() bool {
+	relation := Circleuser2question{}
+	Db.Where("user_id=?", c.UserId).First(&relation)
+	if relation == (Circleuser2question{}) {
+		return false
+	}
+	return true
 }

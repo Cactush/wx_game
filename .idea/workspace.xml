@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91201b6c-17f2-44c7-969e-4b7c2c5d21bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user2question.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/api/v1/circle_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api/v1/circle_user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/logs/log20200414.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/log20200414.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,10 +92,11 @@
       <screen x="0" y="27" width="1668" height="804" />
     </state>
     <state x="519" y="120" width="620" height="614" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1668.804@0.27.1668.804" timestamp="1586768193575" />
-    <state x="498" y="73" width="672" height="758" key="search.everywhere.popup" timestamp="1586768308195">
-      <screen x="0" y="27" width="1668" height="804" />
+    <state x="498" y="74" width="672" height="774" key="search.everywhere.popup" timestamp="1586844473855">
+      <screen x="0" y="27" width="1668" height="820" />
     </state>
     <state x="498" y="73" width="672" height="758" key="search.everywhere.popup/0.27.1668.804@0.27.1668.804" timestamp="1586768308195" />
+    <state x="498" y="74" width="672" height="774" key="search.everywhere.popup/0.27.1668.820@0.27.1668.820" timestamp="1586844473855" />
     <state x="499" y="68" width="672" height="678" key="search.everywhere.popup/0.27.1672.720@0.27.1672.720" timestamp="1586484543384" />
   </component>
 </project>
