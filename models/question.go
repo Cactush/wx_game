@@ -28,7 +28,7 @@ func (q *Questionbank) GetOption() (map[int]string, error) {
 		err = json.Unmarshal(value, &option)
 		temp_option_list = append(temp_option_list, option)
 	}
-	var options_dict map[int]string = make(map[int]string)
+	var options_dict = make(map[int]string)
 	for index, value := range temp_option_list {
 		logging.Info(index, value)
 		options_dict[index+1] = value.Answer

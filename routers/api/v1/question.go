@@ -6,6 +6,7 @@ import (
 	"github.com/Cactush/go-gin/pkg/logging"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
+	"github.com/unknwon/com"
 	"net/http"
 	"time"
 )
@@ -92,4 +93,26 @@ func CreateUserQuestion(db *gorm.DB, user_id int, params SetQuestionParams) erro
 		return nil
 	})
 
+}
+
+func GetQuestions(c *gin.Context) {
+	circleUser := c.Keys["user"].(*models.Circleuser)
+	var questions []models.Circleuser2question
+	models.Db.Where("user_id=?", circleUser.UserId).Find(&questions)
+	var result []map[string]interface{}
+	for _, value := range questions {
+		var question = models.Questionbank{}
+		models.Db.Where("id=?", value.QuestionId).First(&question)
+		options, _ := question.GetOption()
+		option := options[value.Option]
+		data := map[string]interface{}{"id": question.ID, "topic": question.Topic,
+			"option": option, "position": value.Position}
+		result = append(result, data)
+	}
+	c.JSON(http.StatusOK, gin.H{"data": result})
+}
+
+func GetQuestionDetail(c *gin.Context) {
+	id := com.StrTo(c.Param("id")).MustInt()
+	logging.Info(id)
 }
