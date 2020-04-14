@@ -32,6 +32,7 @@ func InitRouter()*gin.Engine  {
 
 		apiv1.GET("/circleuser",v1.GetCircleUser)
 		apiv1.GET("/question/:id",v1.GetQuestion)
+		apiv1.POST("/set_question",v1.SetQuestion)
 	}
 	return r
 }

@@ -3,7 +3,6 @@ package jwt
 import (
 	"github.com/Cactush/go-gin/models"
 	"github.com/Cactush/go-gin/pkg/e"
-	"github.com/Cactush/go-gin/pkg/logging"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -19,10 +18,10 @@ func JWT() gin.HandlerFunc {
 			code = e.INVALID_PARAMS
 		} else {
 			var user_token = models.Usertoken{}
-			logging.Info(token)
+
 			models.Db.Where("`key`=?", token).First(&user_token)
 			if user_token != (models.Usertoken{}) {
-				logging.Info(token)
+
 				var circleuser = models.Circleuser{}
 				models.Db.Where("user_id=?", user_token.UserId).First(&circleuser)
 				if circleuser == (models.Circleuser{}) {
@@ -33,7 +32,7 @@ func JWT() gin.HandlerFunc {
 				}
 			} else {
 				code = e.ERROR
-				logging.Info(user_token)
+
 			}
 		}
 		if code != e.SUCCESS {

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91201b6c-17f2-44c7-969e-4b7c2c5d21bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/user2question.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/api/v1/circle_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api/v1/circle_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user2question.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user2question.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/api/v1/question.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api/v1/question.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/logs/log20200414.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/log20200414.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,10 +88,11 @@
     </state>
     <state x="296" y="56" key="SettingsEditor/0.25.1672.853@0.25.1672.853" timestamp="1586346573226" />
     <state x="296" y="27" key="SettingsEditor/0.27.1672.725@0.27.1672.725" timestamp="1586831586542" />
-    <state x="519" y="120" width="620" height="614" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586768193575">
-      <screen x="0" y="27" width="1668" height="804" />
+    <state x="535" y="123" width="620" height="614" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586850039306">
+      <screen x="0" y="27" width="1718" height="827" />
     </state>
     <state x="519" y="120" width="620" height="614" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1668.804@0.27.1668.804" timestamp="1586768193575" />
+    <state x="535" y="123" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1718.827@0.27.1718.827" timestamp="1586850039306" />
     <state x="498" y="74" width="672" height="774" key="search.everywhere.popup" timestamp="1586844473855">
       <screen x="0" y="27" width="1668" height="820" />
     </state>
