@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"github.com/Cactush/go-gin/middleware/jwt"
 	"github.com/Cactush/go-gin/pkg/setting"
 	"github.com/Cactush/go-gin/routers/api"
 	v1 "github.com/Cactush/go-gin/routers/api/v1"
@@ -15,7 +16,7 @@ func InitRouter()*gin.Engine  {
 	gin.SetMode(setting.RunMode)
 	r.GET("/auth",api.GetAuth)
 	apiv1 := r.Group("/api/v1")
-	//apiv1.Use(jwt.JWT())
+	apiv1.Use(jwt.JWT())
 	{
 		apiv1.GET("/tags",v1.GetTags)
 		apiv1.POST("tags",v1.AddTag)

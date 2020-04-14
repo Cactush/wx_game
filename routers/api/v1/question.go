@@ -13,6 +13,8 @@ type QuestionParams struct {
 }
 
 func GetQuestion(c *gin.Context) {
+	circle_user := c.Keys["user"].(*models.Circleuser)
+	logging.Info(circle_user.UserId)
 	var params QuestionParams
 	err := c.BindJSON(&params)
 	if err != nil {

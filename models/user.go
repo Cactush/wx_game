@@ -1,10 +1,15 @@
 package models
 
 type Circleuser struct {
-	UserId   int    `json:"user_id"`
-	OpenId   string `json:"open_id"`
-	Avatar   string `json:"avatar"`
-	NickName string `json:"nick_name"`
+	UserId       int    `json:"user_id"`
+	OpenId       string `json:"open_id"`
+	Avatar       string `json:"avatar"`
+	NickName     string `json:"nick_name"`
+	WechatAvatar string `json:"wechat_avatar"`
+}
+type Usertoken struct {
+	Key    string `json:"key"`
+	UserId int    `json:"user_id"`
 }
 
 func GetCircleUser(user_id int) (circleuser Circleuser) {
