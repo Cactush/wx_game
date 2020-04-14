@@ -113,6 +113,18 @@ func GetQuestions(c *gin.Context) {
 }
 
 func GetQuestionDetail(c *gin.Context) {
+	circleUser := c.Keys["user"].(*models.Circleuser)
 	id := com.StrTo(c.Param("id")).MustInt()
 	logging.Info(id)
+	var question models.Questionbank
+	models.Db.Where("id=?", id).First(&question)
+	optionList, _ := question.GetOption()
+	var relation models.Circleuser2question
+	models.Db.Where("user_id=? and question_id=?", circleUser.UserId, question.ID).First(&relation)
+	data := map[string]interface{}{
+		"id":          id,
+		"option_list": optionList, "option_id": relation.Option,
+		"position": relation.Position,
+	}
+	c.JSON(http.StatusOK, gin.H{"data": data})
 }
