@@ -30,7 +30,7 @@ func InitRouter()*gin.Engine  {
 		apiv1.PUT("/articles/:id",v1.EditArticle)
 		apiv1.DELETE("/articles/:id",v1.DeleteArticle)
 
-		apiv1.GET("/circleuser/:id",v1.GetCircleUser)
+		apiv1.GET("/circleuser",v1.GetCircleUser)
 		apiv1.GET("/question/:id",v1.GetQuestion)
 	}
 	return r

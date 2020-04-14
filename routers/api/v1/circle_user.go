@@ -2,14 +2,16 @@ package v1
 
 import (
 	"github.com/Cactush/go-gin/models"
+	"github.com/Cactush/go-gin/pkg/logging"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
 func GetCircleUser(c *gin.Context) {
-	var userId int = 1
-	circleUser := models.GetCircleUser(userId)
+
+	circle_user := c.Keys["user"].(*models.Circleuser)
+	logging.Info(circle_user.KeyWord())
 	c.JSON(http.StatusOK, gin.H{
-		"data": circleUser,
+		"data": circle_user,
 	})
 }
