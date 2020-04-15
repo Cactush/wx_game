@@ -34,6 +34,8 @@ func InitRouter() *gin.Engine {
 		apiv1.POST("/set_question", v1.SetQuestion)
 		apiv1.GET("/questions", v1.GetQuestions)
 		apiv1.GET("/question/:id", v1.GetQuestionDetail)
+
+		apiv1.POST("/answer",v1.Answer)
 	}
 	return r
 }
