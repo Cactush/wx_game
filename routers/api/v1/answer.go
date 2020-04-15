@@ -39,3 +39,4 @@ func Answer(c *gin.Context) {
 	models.Db.Create(&answerRecord)
 	c.JSON(http.StatusOK, gin.H{"status": "ok"})
 }
+
